@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplos</title>
+</head>
+<body>
+    <header>
+       <h1>Este é o título mais importante. Reconhecido pelo browser e só deve ser usado uma vez.</h1>
+       <p>Este<br>paragrafo<br>tem line breaks.</p>
+       <pre>
+           Já a tag <i>pre</i> preserva
+           
+           As quebras de linha   e                 tambem os    e s p a ç o s.
+       </pre>
+    </header>
+    
+    <section id="first">
+        <h2>Segundo parágrafo mais importante. Usado para títulos de sessões.</h2>
+        <h6>Vai ate o h6</h6>
+        
+        <i>itálico</i>, <b>negrito</b>, <em>texto enfático</em>, <strong>texto importante</strong>
+
+        <q>Uma citação curta pode ser incluída usando uma tag de formatação para isto.</q>
+        <blockquote cite="http://www.wikipedia.com">
+            Ou você pode incluir uma citação mais longa e também colocar a referência
+             externa indicando da onde aquela citação veio. Note como o formato
+              do conteúdo desta tag se diferencia do formato apresentado pela citação
+               menor anterior. Isto ocorre pois o blockquote é um elemento blocado, que ocupa toda a largura da tela.
+            </blockquote>
+    </section>
+    
+    <section>
+        <hr>
+        <h2>Listas</h2>
+        <ul>
+            <li>Lista nao ordenada</li>
+        </ul>
+        <ol type="1">
+            <li>Primeiro item</li>
+            <li>Segundo item</li>
+            <li>Terceiro item</li>
+            <li>Quarto item</li>
+        </ol>
+        <ol type="1" start="50">
+                <li>Começando</li>
+                <li>Pelo</li>
+                <li>50</li>
+            </ol>
+        <ol type="A">
+            <li>Listas</li>
+            <li>Ordenadas</li>
+            <li>Em</li>
+            <li>Ordem alfabetica</li>
+            <li>Caixa alta</li>
+        </ol>
+        <ol type="a">
+            <li>Listas</li>
+            <li>Ordenadas</li>
+            <li>Em</li>
+            <li>Ordem alfabetica</li>
+            <li>Caixa baixa</li>
+        </ol>
+        <ol type="I">
+            <li>Listas</li>
+            <li>Ordenadas</li>
+            <li>Em</li>
+            <li>Numeros Romanos</li>
+            <li>Caixa alta</li>
+        </ol>
+        <ol type="i">
+            <li>Listas</li>
+            <li>Ordenadas</li>
+            <li>Em</li>
+            <li>Numeros Romanos</li>
+            <li>Caixa baixa</li>
+        </ol>
+        <p>Listas de descrição:</p>
+        <dl>
+            <dt>Primeiro Termo</dt>
+                <dd>Significado do Primeiro termo</dd>
+            <dt>Segundo Termo</dt>
+                <dd>Significado do Segundo Termo</dd>
+        </dl>      
+    </section>
+
+    <section>
+        <hr>
+        <h2>Tabelas</h2>
+        <table border="1">
+            <caption>Tabela com dados sobre países do mundo</caption>
+            <thead>
+                <tr>
+                    <th>País</th>
+                    <th>Capital</th>
+                    <th>Idioma</th>
+                    <th>População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Brasil</td>
+                    <td>Brasília</td>
+                    <td>Português</td>
+                    <td>1000</td>
+                </tr>
+                <tr>
+                    <td>Chile</td>
+                    <td>Santiago</td>
+                    <td>Espanhol</td>
+                    <td>1000</td>
+                </tr>
+                <tr>
+                    <td>Inglaterra</td>
+                    <td>Londres</td>
+                    <td rowspan="2">Inglês</td>
+                    <td>1000</td>
+                </tr>
+                <tr>
+                    <td>Nova Zelândia</td>
+                    <td>Wellington</td>
+                    <td>1000</td>
+                </tr>
+                <tr>
+                    <td>Japão</td>
+                    <td>Tóquio</td>
+                    <td>Japonês</td>
+                    <td>1000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="3">Total População</th>
+                    <th>5000</th>
+                </tr>
+            </tfoot> 
+        </table>
+    </section>
+
+    <section>
+        <hr>
+        <h2>Tag a (links)</h2>
+        <a href="/westworld.jpg" download="nome_padrao">Baixar uma imagem pelo link</a>
+        <br>
+        <a href="mailto:email@gmail.com??cc=outroemail@example.com&bcc=maisoutroemail@example.com&subject=Summer%20Party&body=You%20are%20invited%20to%20a%20big%20summer%20party!" target="_top">
+            Enviar um email com titulo e conteudo
+        </a>
+        <p>
+            Um link com telefone:
+            <a href="tel:+82999042947">+82 99904-2947</a>
+        </p>
+        <p>
+            <a href="#first">Ir para o topo.</a>
+        </p>
+        <p>
+            <a href="javascript:alert('Hello World!');">Executar JavaScript</a>
+        </p>
+
+    </section>
+
+    <section>
+        <hr>
+        <h2>Tag de imagens</h2>
+        <figure>
+            <img src="workplace.jpg" alt="Workplace" usemap="#figuremap" width="400" height="379">
+
+            <map name="figuremap">
+                <area shape="rect" coords="34,44,270,350" alt="Computador" target="_blank" href="https://pt.wikipedia.org/wiki/Computador">
+                <area shape="rect" coords="290,172,333,250" alt="Celular" target="_blank" href="https://pt.wikipedia.org/wiki/Telefone_celular">
+                <area shape="circle" coords="337,300,44" alt="Xícara de café" target="_blank" href="https://pt.wikipedia.org/wiki/Caf%C3%A9">
+            </map>
+            <figcaption>Foto de um ambiente de trabalho.</figcaption>
+        </figure>       
+
+    </section>
+
+    <footer>
+        <p> &copy Rodapé</p>
+    </footer>
+
+
+</body>
+</html>
