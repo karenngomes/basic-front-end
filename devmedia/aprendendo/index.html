@@ -9,6 +9,11 @@
 <body>
     <header>
        <h1>Este é o título mais importante. Reconhecido pelo browser e só deve ser usado uma vez.</h1>
+       <figure>
+           <img src="html5-semantic.jpg" alt="Semantica do HTML">
+           <figcaption>Modo semantico que comporta o HTML5</figcaption>
+
+       </figure>
        <p>Este<br>paragrafo<br>tem line breaks.</p>
        <pre>
            Já a tag <i>pre</i> preserva
@@ -175,6 +180,144 @@
             </map>
             <figcaption>Foto de um ambiente de trabalho.</figcaption>
         </figure>       
+
+    </section>
+
+    <section>
+        <hr>
+        <h2>Formulários</h2>
+
+        <form>
+            <label>Mensagem:</label>
+            <textarea name="mensagem" rows="10" cols="20" ></textarea>
+            <br>
+            <label>Estado:</label>
+            <select name="estados">
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+                <option value="AL" selected>Alagoas</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="ES">Espírito Santo</option>
+            </select>
+            <button type="button">Clique aqui</button>
+            <br>
+            <label>Seleção de mais de um elemento:</label><br>
+            <label>Checkbox 1</label>
+            <input type="checkbox" name="check1" value="1" />
+            
+            <label>Checkbox 2</label>
+            <input type="checkbox" name="check2"  value="2" />
+            
+            <label>Checkbox 3</label>
+            <input type="checkbox" name="check3"  value="3" />
+            <br><label>Seleção de apenas um elemento:</label><br>
+            <label for="radio1">Radio 1</label>
+            <input type="radio" id="radio1" name="radio" value="1" />
+            
+            <label for="radio2">Radio 2</label>
+            <input type="radio" id="radio2" name="radio" value="2" checked />
+            
+            <label for="radio3">Radio 3</label>
+            <input type="radio" id="radio3" name="radio" value="3" />
+
+            <br>
+            <label>Lista de navegadores:</label>
+            <input list="browsers" name="browser">
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+
+        </form>
+        <br><br>
+        <form action="http://arquivo.devmedia.com.br/projeto/requisicao.php" method="GET">
+            
+            <fieldset>
+                <legend>Conta:</legend>
+                <div>
+                    <label>E-mail:</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div>
+                    <label>Senha:</label>
+                    <input type="password" name="senha">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados pessoais:</legend>
+                <div>
+                    <label>Nome:</label>
+                    <input type="text" name="nome" placeholder="Ex.: Karen" />
+                </div>
+                <div>
+                    <label>Telefone:</label>
+                    <input type="tel" name="telefone" pattern="\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4}" placeholder="Ex.: (82) 99999-0000" />
+                </div>
+                <div>
+                    <label>Sexo:</label>
+                    <input type="radio" name="sexo" value="masculino">
+                    <label>Masculino</label>
+                    <input type="radio" name="sexo" value="feminino" checked>
+                    <label>Feminino</label>
+                </div>
+                <div>
+                    <label>Data de nascimento:</label>
+                    <input type="date" name="data_nascimento" required />
+                </div>
+                <div>
+                    <label>Foto de perfil:</label>
+                    <input type="file" name="foto" accept="image/*">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Endereço:</legend>
+                <div>
+                    <label>Rua:</label>
+                    <input type="text" name="endereco_rua" />
+                </div>
+                <div>
+                    <label>Complemento:</label>
+                    <input type="text" name="endereco_complemento" />
+                </div>
+                <div>
+                    <label>Numero:</label>
+                    <input type="number" name="endereco_numero" min="1" max="9999" value="0" required />
+                </div>
+                <div>
+                    <label>Cidade:</label>
+                    <input type="text" name="endereco_cidade" />
+                </div>
+                <div>
+                    <label>Estado:</label>
+                    <select name="endereco_estado">
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="MG" selected>Minas Gerais</option>
+                        <option value="ES">Espírito Santo</option>
+                        </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Anúncio</legend>
+                <div>
+                    <label>Como conheceu o Hello Pizza?</label>
+                    <textarea maxlength="256" name="como_conheceu_o_site" placeholder="Explique como conheceu a pizzaria"></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" name="receber_anuncio" checked /> 
+                    <label>Desejo receber ofertas por e-mail</label>
+                </div>
+            </fieldset>
+
+            <input type="submit" value="Enviar">
+            
+        </form>
 
     </section>
 
