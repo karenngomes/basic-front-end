@@ -5,19 +5,24 @@
     <meta name="description" content="Projeto de um website de uma pizzaria - DevMedia">
     <meta name="author" content="Karen Gomes">
     <title>Hello pizza</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo|Reenie+Beanie|Roboto:400,500,500i" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Hello Pizza</h1>
-        <ul>
-            <li>Home</li>
-            <li><a href="sobre.html" target="_blank">Sobre</a></li>
-            <li>Contato</li>
-        </ul>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="sobre.html" target="_blank">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        
     </header>
 
     <section>
-        <ul>
+        <ul id="vantagens">
             <li>Qualidade</li>
             <li>Sabor</li>
             <li>Praticidade</li>
@@ -29,9 +34,9 @@
         <h2>Sabores</h2>
         <p>Conheça os nossos <strong>5 sabores</strong> de <em>pizza</em>!</p>
 
-        <img src="img/sabores-pizzas.png" alt="Fotos de pizzas de vários sabores">
+        <img src="img/sabores-pizzas.png" id="pizza-sabores" alt="Fotos de pizzas de vários sabores">
 
-        <table border="1">
+        <table>
             <tr>
                 <th>Sabor</th>
                 <th>Queijo e Molho</th>
@@ -41,40 +46,40 @@
             </tr>
             <tr>
                 <td>Mozzarella</td>
-                <td rowspan="6">Sim</td>
-                <td>Não</td>
-                <td>Não</td>
-                <td>Não</td>
+                <td rowspan="6" class="texto-positivo">Sim</td>
+                <td class="texto-negativo">Não</td>
+                <td class="texto-negativo">Não</td>
+                <td class="texto-negativo">Não</td>
             </tr>
             <tr>
                 <td>Calabresa</td>
-                <td>Não</td>
-                <td>Sim</td>
-                <td>Sim</td>
+                <td class="texto-negativo">Não</td>
+                <td class="texto-positivo">Sim</td>
+                <td class="texto-positivo">Sim</td>
             </tr>
             <tr>
                 <td>Pepperoni</td>
-                <td>Não</td>
-                <td>Sim</td>
-                <td>Sim</td>
+                <td class="texto-negativo">Não</td>
+                <td class="texto-positivo">Sim</td>
+                <td class="texto-positivo">Sim</td>
             </tr>
             <tr>
                 <td>Marguerita</td>
-                <td>Sim</td>
-                <td>Sim</td>
-                <td>Sim</td>
+                <td class="texto-positivo">Sim</td>
+                <td class="texto-positivo">Sim</td>
+                <td class="texto-positivo">Sim</td>
             </tr>
             <tr>
                 <td>Portuguesa</td>
-                <td>Sim</td>
-                <td>Sim</td>
-                <td>Sim</td>
+                <td class="texto-positivo">Sim</td>
+                <td class="texto-positivo">Sim</td>
+                <td class="texto-positivo">Sim</td>
             </tr>
             <tr>
                 <td>Alho</td>
-                <td>Não</td>
-                <td>Não</td>
-                <td>Não</td>
+                <td class="texto-negativo">Não</td>
+                <td class="texto-negativo">Não</td>
+                <td class="texto-negativo">Não</td>
             </tr>
         </table>
 
