@@ -1,20 +1,22 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 }
 
-body{
-	background: url("../img/background-pizza.png") 0 0 no-repeat;
+body {
 	background-color: #131313;
+	background-image: url("../img/background-pizza.png");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-header{
-	height: 123px;
+header {
 	background-color: rgba(0, 0, 0, 0.5);
+	height: 123px;
 	padding: 30px 72px 0 72px;
 }
 
-h1, footer a{
+h1, footer a {
 	height: 70px;
 	width: 304px;
 	overflow: hidden;
@@ -23,7 +25,7 @@ h1, footer a{
 	display: block;
 }
 
-h2{
+h2 {
 	color:#fff;
 	font-family: 'Roboto', sans-serif;
 	padding: 20px;
@@ -36,35 +38,35 @@ h2{
 	margin: 50px 45%;
 }
 
-section{
+section {
 	clear: both;
 	padding: 30px 72px 0 72px;
 	position: relative;
 	margin:0 0 50px 0;
 }
 
-img#pizza-sabores{
+img#pizza-sabores {
 	display: block;
 	clear: both;
 	margin: 0 10%;
 }
 
-nav{
+nav {
 	float: right;
 	margin-top: -30px;
 }
 
-nav ul{
+nav ul {
 	list-style: none;
 	display: block;
 }
 
-nav ul li{
+nav ul li {
 	float: left;
 	margin:0 50px;
 }
 
-nav ul li a{
+nav ul li a {
 	color:#fff;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -96,7 +98,7 @@ ul#vantagens li::before {
   margin: 25px 10px 0 10px;
 }
 
-table{
+table {
 	width: 100%;
 	background-color: #2a2a2a;
 	clear: both;
@@ -105,41 +107,41 @@ table{
 	margin-top:100px;
 }
 
-th, td, p, label{
+th, td, p, label {
 	font-size: 12px;
 	color:#fff;
 	font-family: 'Roboto', sans-serif;
 }
 
-th{
+th {
 	color: #4d4d4d;
 	font-weight: bold;
 }
 
-th, td{
+th, td {
 	border:1px #000 solid;
 	padding: 25px;
 	text-align: center;
 	width: 20%;
 }
 
-form{
+form {
 	clear: both;
 	margin:0 30%;
 }
 
-form label{
+form label {
 	margin:15px 0;
 	display: block;
 	text-transform: uppercase;
 }
 
-form input, form textarea{
+form input, form textarea {
 	border:1px solid #2a2a2a;
 	height: 10px;
 	width: 500px;
 	border-radius: 30px;
-	background-color: transparent;;
+	background-color: transparent;
 	display: block;
 	padding: 25px 25px;
 	font-family: 'Roboto', sans-serif;
@@ -148,7 +150,7 @@ form input, form textarea{
 	font-style: italic;
 }
 
-form textarea{
+form textarea {
 	height: 200px;
 	font-size: 0.75em;
 }
@@ -181,14 +183,42 @@ footer a {
     margin: 0px auto;
 }
 
-footer p{
+footer p {
 	text-align: center;
 }
 
-.texto-positivo{
+.texto-positivo {
 	color: #87b50f;
 }
 
-.texto-negativo{
+.texto-negativo {
 	color: #fb3958;
+}
+
+form a {
+	cursor: pointer;
+	border: 1.3px solid #fff;
+	padding: 8px 14px;
+	border-radius: 50%;
+}
+
+form a:hover {
+	background-color: #6d6d6d6d;
+}
+
+form a:active {
+	background-color: #777;
+}
+
+input.quantidade {
+	text-align: center;
+	border: none;
+	display: inline;
+	width: 30px;
+	padding: 5px 0px;
+	margin-left: 15px;
+}
+
+form td:nth-child(2){
+	min-width: 123px;
 }
