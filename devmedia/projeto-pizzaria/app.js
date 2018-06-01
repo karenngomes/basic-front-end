@@ -73,16 +73,4 @@ function adicionaAoTotal(valor) {
     elemenTotal.textContent = valor + Number(elemenTotal.textContent);
 }
 
-/*
-botaoDecrementa.addEventListener('click', function() {
-    inputQuantidade.value--;
-});
-
-botaoIncrementa.addEventListener('click', function() {
-    inputQuantidade.value++;
-});
-
-
-
-*/
 
