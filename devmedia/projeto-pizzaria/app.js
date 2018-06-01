@@ -1,9 +1,6 @@
-//inputQuantidade.value = 1 + Number(inputQuantidade.value);
 
 //incrementa
 var botoesIncrementa = document.querySelectorAll(".btn-incrementa"); //vai retornar uma lista com esse elemento
-
-//console.log(botoesIncrementa);
 
 for(let botao of botoesIncrementa) {
     
@@ -19,16 +16,9 @@ for(let botao of botoesIncrementa) {
         var preco = pegaPrecoItem(item);
         
         adicionaAoTotal(preco);
-        /*
-        var total = document.getElementById("total")
-        total.innerHTML = preco;
-        */
-        //elemenTotal.innerHTML = Number(elemenTotal.innerHTML) + preco;
 
     }
 }
-
-
 
 //decrementa
 var botoesDecrementa = document.querySelectorAll(".btn-decrementa");
@@ -50,6 +40,27 @@ for(let botao of botoesDecrementa) {
         } 
     }
 }
+
+var formPedido = document.forms.pedido;
+
+formPedido.addEventListener('submit', function(event) {
+
+    var contador = 0;
+
+    var inputs = formPedido.querySelectorAll("input.quantidade");
+
+    for(let input of inputs) {
+        if(input.value > 0 )
+            contador++;
+    }
+
+    if(contador == 0) {
+        alert("Deve ter pelo menos 1 pizza no pedido");
+        event.preventDefault();
+    }
+
+});
+
 
 //Funções auxiliares
 function pegaPrecoItem(item) {
