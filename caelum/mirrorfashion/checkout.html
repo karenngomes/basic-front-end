@@ -134,6 +134,30 @@
         </div>
 
     </div>
+
+    <div>
+        <button id="botaoEnviar">Clique aqui</button>
+        <button class="btn btn-secundary" id="botaoSair">Sair</button>
+    </div>
+
+    <script>
+        
+        let botao = document.querySelector("#botaoEnviar");
+        botao.onclick = mostraAlerta;
+        function mostraAlerta() {
+            alert("Funciona!");
+        }
+        botao.onmousemove = mostraConsole;
+        function mostraConsole() {
+            console.log("oi");
+        }
+        let botao2 = document.querySelector("#botaoSair");
+        botao2.onclick = desejaSair;
+        function desejaSair() {
+            alert("Voce tem certeza que deseja sair?");
+        }
+        
+    </script>
     
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
