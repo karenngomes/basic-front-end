@@ -1,6 +1,6 @@
 body {
     color: #333333;
-    font-family: "Lucida Sans Unicode",	"Lucida	Grande", sans-serif;
+    font-family: 'PT Sans', sans-serif;
 }
 header {
     position: relative;
@@ -133,6 +133,7 @@ header {
     text-transform: uppercase;
     margin-bottom: 10px;
     text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.8);
+    font-family: 'Bad Script', sans-serif;
 }
 .painel h2:before {
     content: '\2756';
